@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_bg"
+            android:fontFamily="@font/candal"
+            android:text="The Munchkin Academy"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:paddingLeft="13dp"
+            android:paddingVertical="20dp"
+            android:textColor="@color/orange" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="0dp">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/all_kids_button"
+                    android:text="View All Kids"
+                    android:textSize="18dp"
+                    android:textColor="#f000"
+                    android:backgroundTint="#556B2F"
+                    android:fontFamily="@font/candal"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/search_kid_button"
+                    android:text="Seacrh Kid"
+                    android:textSize="18dp"
+                    android:textColor="#f000"
+                    android:backgroundTint="#556B2F"
+                    android:fontFamily="@font/candal"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="0dp">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/statements_button"
+                    android:text="View Statements"
+                    android:textSize="15dp"
+                    android:textColor="#f000"
+                    android:backgroundTint="#556B2F"
+                    android:fontFamily="@font/candal"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/logout_button"
+                    android:text="Log out"
+                    android:textSize="20dp"
+                    android:textColor="#f000"
+                    android:fontFamily="@font/candal"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#B22222" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="333dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/logo" />
+
+
+    </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/footer_container"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".SearchKid"
+    android:background="@drawable/backg">
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bg"
+        android:fontFamily="@font/candal"
+        android:text="Expenditures"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:paddingLeft="25dp"
+        android:paddingVertical="8dp"
+        android:textColor="@color/orange" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/enter_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textview_border"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:backgroundTint="@color/container_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Enter Expenditure Details"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="35dp"
+                android:background="#B2B2B2" />
+
+            <TextView
+                android:id="@+id/eTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:text="Expense Type"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/eTypeText"
+                android:background="@drawable/textview_border"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eTypeText"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-10dp"
+                android:textColor="#ff6347"
+                android:visibility="invisible">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTypeText"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:hint="Amount (AED)"
+                android:inputType="number"
+                android:padding="7dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+
+            <LinearLayout
+                android:id="@+id/date_of_purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amount">
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kid_age"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Date of Purchase"
+                    android:inputType="date"
+                    android:padding="7dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/calendar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_marginTop="7dp"
+                    android:clickable="true"
+                    android:src="@drawable/calendar" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_of_purchase"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-7dp"
+                android:text="dd-mm-yyyy"
+                android:textColor="	#696969"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:visibility="invisible" />
+
+        <Button
+        android:id="@+id/set_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_picker"
+        android:layout_marginHorizontal="140dp"
+        android:padding="5dp"
+        android:text="Set Date"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/add_expen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="150dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="@color/orange"
+            android:padding="7dp"
+            android:text="Add"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/footer_container"
+        android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

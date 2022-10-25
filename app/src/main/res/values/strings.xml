@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Kid Nursery</string>
+
+    <string-array name="list">
+        <item>Select the type</item>
+        <item>Rents</item>
+        <item>Utilities</item>
+        <item>Human Resources</item>
+        <item>Maintenance</item>
+        <item>Equipments</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="generate">
+        <item>Please select the type</item>
+        <item>Date</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>Please select the type</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>
